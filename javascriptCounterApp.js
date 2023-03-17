@@ -1,8 +1,8 @@
 //Using querySelector to select the FIRST
-//element on a HTML page wich has
-//the .CSS property
+//element on a HTML page wich has a .CSS property
+
 var minus = document.querySelector("#minus"); //here I'm looking for the first element which has the id "minus"
-var result = document.getElementById("result"); //here, I picked up result by Id
+var result = document.getElementById("result"); //here, I picked up result by Id (a safer method to pick up things!)
 
 //Here I create the function to reduce the result
 var reduceFunction = function reduce() {
@@ -17,7 +17,7 @@ minus.addEventListener("click", reduceFunction);
 //Now I need to target "+"
 //I use "getElementsByTagName" and choose "button". I create the variable "buttons" wich has a list all of the buttons
 //Indeed, there are 2 buttons in my HTML page
-//So I select the second button among 2 available (using "1" I select the second!!!)
+//So I select the second button among 2 available (using "1", I select the second!!!)
 var buttons = document.getElementsByTagName("button");
 plus = buttons[1];
 
